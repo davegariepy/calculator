@@ -1,0 +1,11 @@
+/* Global Reset: * tags every element */
+
+* {
+  margin: 0; /* removes default browser margins */
+  padding: 0; /* removes default padding */
+  box-sizing: border-box; /* Include padding and border in the element’s width and height calculations */
+}
+
+.hello {
+  color: red;
+}
