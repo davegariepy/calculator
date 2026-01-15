@@ -9,20 +9,20 @@ button.addEventListener("click", () => {
 });
 
 // 3
-const nameInput = document.getElementById("nameInput");
-const nameButton = document.getElementById("nameButton");
+// const nameInput = document.getElementById("nameInput");
+// const nameButton = document.getElementById("nameButton");
 
-nameButton.addEventListener("click", () => {
-  alert(nameInput.value)
-})
+// nameButton.addEventListener("click", () => {
+//   alert(nameInput.value)
+// })
 
 //8A
-// const numberInput = document.getElementById("numberInput");
-// const numberButton = document.getElementById("numberButton");
+const numberInput = document.getElementById("numberInput");
+const numberButton = document.getElementById("numberButton");
 
-// numberButton.addEventListener("click", () => {
-//   alert(numberInput.value)
-// })
+numberButton.addEventListener("click", () => {
+  alert(numberInput.value)
+})
 
 //8B adding strings
 // const numberInputA = document.getElementById("numberInputA");
