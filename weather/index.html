@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boston Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-app">
+        <!-- Loading State -->
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="error" class="error hidden">
+            <p class="error-message" id="error-message"></p>
+            <button onclick="fetchWeather()" class="retry-btn">Try Again</button>
+        </div>
+
+        <!-- Weather Content -->
+        <div id="weather-content" class="weather-content hidden">
+            <!-- Header with location and current weather -->
+            <header class="weather-header">
+                <div class="location-info">
+                    <h1>Boston, MA</h1>
+                    <button class="refresh-btn" onclick="fetchWeather()">↻</button>
+                </div>
+                <div class="current-weather">
+                    <div class="current-left">
+                        <div class="weather-icon" id="current-icon">☀️</div>
+                        <div class="temperature-display">
+                            <span class="temperature" id="current-temp">--</span>
+                            <span class="unit">°F</span>
+                        </div>
+                    </div>
+                    <div class="current-right">
+                        <p class="weather-description" id="current-description">--</p>
+                        <p class="last-updated" id="last-updated">--</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Hourly Forecast -->
+            <section class="hourly-forecast">
+                <div class="hourly-container" id="hourly-container">
+                    <!-- Hourly cards will be inserted here -->
+                </div>
+            </section>
+
+            <!-- Daily Forecast -->
+            <section class="daily-forecast">
+                <div class="forecast-container" id="daily-container">
+                    <!-- Daily cards will be inserted here -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
